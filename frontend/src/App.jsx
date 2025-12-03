@@ -61,7 +61,8 @@ function Galaxy({ onHoverNode, refreshTrigger, onNodeClick }) {
   const [memories, setMemories] = useState([])
 
   useEffect(() => {
-    fetch('http://127.0.0.1:8000/galaxy')
+    // 👇 ICI : Connexion au Backend Render
+    fetch('https://nexus-project-434h.onrender.com/galaxy')
       .then(res => res.json())
       .then(data => {
         const mappedData = data.map(mem => ({
@@ -118,7 +119,8 @@ function Interface({ hoveredText, onMessageSent }) {
     setLoading(true); setResponse(null)
     
     try {
-      const res = await fetch(`http://127.0.0.1:8000/ask?question=${question}`)
+      // 👇 ICI : Connexion au Backend Render
+      const res = await fetch(`https://nexus-project-434h.onrender.com/ask?question=${question}`)
       const data = await res.json()
       setResponse(data.response)
       onMessageSent() 
@@ -176,7 +178,6 @@ function Interface({ hoveredText, onMessageSent }) {
         <h1 style={styles.title}>NEXUS</h1>
         <span style={styles.signature}>Built by Bilel Chikar</span>
         
-        {/* MODIFICATION ICI : Suppression de "DATA FOUND" */}
         <div style={styles.scannerLine}>
           {hoveredText ? `>> ${hoveredText.substring(0, 60)}...` : ">> SYSTEM SCANNING..."}
         </div>
