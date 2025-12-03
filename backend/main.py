@@ -13,7 +13,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["*"],  # <--- METTRE UNE ÉTOILE ICI (Ça veut dire : Tout le monde rentre)
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
