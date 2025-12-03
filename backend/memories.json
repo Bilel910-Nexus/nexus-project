@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "text": "Syst\u00e8me Nexus initialis\u00e9",
+        "category": "system"
+    },
+    {
+        "id": 2,
+        "text": "M\u00e9moire persistante activ\u00e9e",
+        "category": "system"
+    },
+    {
+        "id": 3,
+        "text": "Le fait r\u00e9sum\u00e9",
+        "category": "ai"
+    },
+    {
+        "id": 4,
+        "text": "Le go\u00fbt pr\u00e9f\u00e9r\u00e9 est le chocolat",
+        "category": "ai"
+    },
+    {
+        "id": 5,
+        "text": "Le fait r\u00e9sum\u00e9",
+        "category": "ai"
+    },
+    {
+        "id": 6,
+        "text": "Le fait r\u00e9sum\u00e9",
+        "category": "ai"
+    },
+    {
+        "id": 7,
+        "text": "Utilisateur a commenc\u00e9 les entra\u00eenements de karat\u00e9 hier",
+        "category": "ai"
+    },
+    {
+        "id": 8,
+        "text": "Utilisateur se consid\u00e8re comme une personne",
+        "category": "ai"
+    },
+    {
+        "id": 9,
+        "text": "Utilisateur mentionne un \u00e9l\u00e8ve de BTS SIO",
+        "category": "ai"
+    }
+]
